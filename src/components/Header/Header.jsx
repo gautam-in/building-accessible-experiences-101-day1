@@ -1,5 +1,8 @@
-import {Logo} from '../Logo/Logo';
+import { Logo } from '../logo';
+import styles from './header.module.css';
 
 export const Header = () => (
-  <Logo />
+  <div className={styles.container}>
+    <Logo />
+  </div>
 )
