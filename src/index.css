@@ -27,6 +27,9 @@
   --color-error-100: #de2d0f;
   --color-error-200: #f04124;
 }
+:focus {
+  outline: none;
+}
 html,
 body {
   font-family: var(--font-family);
@@ -37,6 +40,6 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 105px 1fr 30px;
+  grid-template-rows: 76px 1fr 30px;
   grid-template-areas: 'header header header header' 'sidebar main main main' 'footer footer footer footer';
 }
