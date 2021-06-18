@@ -1,0 +1,54 @@
+.container {
+  padding: 0 1rem;
+  margin: 1rem 0 2rem;
+  position: relative;
+}
+.container::after {
+  width: 1px;
+  position: absolute;
+  height: 80%;
+  content: '';
+  display: block;
+  right: 0;
+  top: 50%;
+  background: var(--color-neutral-700);
+  filter: blur(2px);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.heading {
+  height: 70px;
+  overflow: hidden;
+}
+.image {
+  max-width: 100%;
+}
+.description {
+  background: #f0f0f0;
+  font-size: 0.8rem;
+  padding: 0.4rem;
+}
+.moreinfo {
+}
+.price {
+}
+.buynow {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1rem 0;
+  padding: 0.85em 1em;
+  border: none;
+  border-radius: 0;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  font-size: 1rem;
+  -webkit-appearance: none;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--color-primary-200);
+  color: var(--color-neutral-900);
+  width: 100%;
+}
+.buynow:hover {
+  background-color: var(--color-primary-100);
+}
